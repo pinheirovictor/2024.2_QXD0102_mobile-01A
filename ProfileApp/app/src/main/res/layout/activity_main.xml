@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Header: Profile Image and Name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:paddingBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:contentDescription="Foto de perfil"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/nameText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nome do Usuário"
+                        android:textSize="24sp"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/jobTitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Desenvolvedor Android"
+                        android:textSize="16sp"
+                        android:textColor="?android:attr/textColorSecondary"
+                        android:paddingTop="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Seção de Resumo -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/summaryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resumo"
+                android:textSize="18sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <TextView
+                android:id="@+id/summaryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profissional com experiência em desenvolvimento de aplicativos Android, focado em soluções eficientes e intuitivas."
+                android:textSize="16sp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:paddingTop="8dp" />
+
+            <!-- Seção de Experiência -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/experienceTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Experiência"
+                android:textSize="18sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <TextView
+                android:id="@+id/experienceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desenvolvedor Android - Empresa XYZ\nDesenvolvimento de soluções móveis para grandes empresas, com foco em experiência do usuário."
+                android:textSize="16sp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:paddingTop="8dp" />
+
+            <!-- Seção de Educação -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/educationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Educação"
+                android:textSize="18sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <TextView
+                android:id="@+id/educationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bacharelado em Ciência da Computação - Universidade XYZ (2015-2019)"
+                android:textSize="16sp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:paddingTop="8dp" />
+
+            <!-- Seção de Habilidades -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/skillsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Habilidades"
+                android:textSize="18sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <TextView
+                android:id="@+id/skillsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Kotlin, Java\n• Desenvolvimento Android\n• Integração com APIs REST\n• Design de interfaces intuitivas"
+                android:textSize="16sp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:paddingTop="8dp" />
+
+            <!-- Seção de Projetos -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/projectsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Projetos"
+                android:textSize="18sp"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <TextView
+                android:id="@+id/projectsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Aplicativo de Contagem de Pessoas - Utilizando Wi-Fi para sensoriamento em ambientes internos\n• Plataforma de Desenvolvimento IoT - Projeto para dispositivos conectados"
+                android:textSize="16sp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:paddingTop="8dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
