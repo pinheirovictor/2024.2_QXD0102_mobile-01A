@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AuthAula</string>
+    <string name="default_web_client_id">AuthAula</string>
+</resources>
